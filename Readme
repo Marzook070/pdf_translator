@@ -1,0 +1,4 @@
+Pdf_Translator
+
+This is a python program to translate the pdf to other language with all the formatting and keeps the structure of the pdf as the original and translate only the text. It preserves the images, sturcture, formatting of text, and fonts as same as original
+
