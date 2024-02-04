@@ -1,4 +1,28 @@
 Pdf_Translator
 
-This is a python program to translate the pdf to other language with all the formatting and keeps the structure of the pdf as the original and translate only the text. It preserves the images, sturcture, formatting of text, and fonts as same as original
+This is a python program to translate the pdf to other language with all the formatting and keeps the structure of the pdf as the original and translate only the text. It preserves the images, sturcture, formatting of text, and fonts as same as original for most cases 
 
+This requires docker deamon running in the background and also require that the system to have chrome or chromium driver in the machine and requires internet to translate 
+
+the translation takes some time since it uses free translation python pkg from google translation api 
+
+this return the translated pdf file on the same directory where you run the code form 
+
+currently it takes only the name of the file and the language to which it needed to be translated to 
+it auto detects the language of the given pdf so don't need to specify the input file pdf 
+
+
+technologies used:
+	- Docker
+	- python 
+	- beautifulsoup4(for parsing pdf file)
+	- googletrans api(for translation)
+	- pdf2htmlEX(for converting the pdf to html)
+	- chromium driver(for pdf conversion)
+
+to do:
+
+ - compile these different dependencies and programs into an docker image 
+ - to handle expceptions caused by the wrong inputs and files 
+ - improve the performance by speeding up the translation process
+ - better handling of the html escape statements, glyphs
